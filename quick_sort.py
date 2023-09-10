@@ -1,6 +1,6 @@
 def quick_sort(nums):
     nums = list(nums)
-    if len(nums) < 1:
+    if len(nums) <= 1:
         return nums
     
     pivot = nums[0]
@@ -13,6 +13,4 @@ def quick_sort(nums):
     
     return sortedNums
 
-
-nums = [i for i in input("Enter a sequence: ").split()]
-print("Sorted sequence:", quick_sort(nums))
+print(quick_sort([1,2,3,4,5,6,0]))
